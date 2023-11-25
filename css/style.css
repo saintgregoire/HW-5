@@ -1,0 +1,140 @@
+@import url('reset.css');
+
+table, td {
+  border: solid black;
+}
+
+table {
+  border-collapse: separate;
+	border-spacing: 2px;
+}
+
+td {
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+}
+
+tr {
+  background: rgb(87, 98, 18);
+}
+
+body.table {
+  background-image: url(../img/compet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container.table {
+  text-align: center;
+}
+
+table {
+  width: 600px;
+  margin: 50px auto;
+}
+
+caption {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.tdata {
+  background: grey;
+}
+
+.tdata.green {
+background: rgb(35, 194, 52);
+}
+
+.tdata.dark {
+  background: rgb(21, 67, 18);
+}
+
+.tdata.yellow {
+  background: rgb(250, 194, 52)
+}
+
+.tdata.blue {
+  background: rgb(0, 0, 255);
+}
+
+.box.link {
+  background: rgb(0, 60, 101, 0.8);
+}
+
+.link.table {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: rgb(185, 43, 140);
+  font-size: 20px;
+}
+
+body {
+  background-image: url(../img/fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container.main {
+  width: 1200px;
+  margin: 50px auto;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  vertical-align: middle;
+  background-color: azure;
+  line-height: 1.5;
+}
+
+h1.head {
+  background: yellow;
+}
+
+h2 {
+  background: rgb(31, 137, 149);
+  font-size: 25px;
+  margin: 20px auto;
+  font-weight: 900;
+}
+
+.link.main {
+  text-decoration: none;
+  color: brown;
+}
+
+p.down {
+  background: yellow;
+  text-transform: uppercase;
+  color: red;
+}
+
+p.down + .link.down {
+  color:brown;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 15px 5px;
+}
+
+h1 {
+  margin: 20px auto;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+div > h2 ~ p > span {
+  font-weight: 900;
+}
+
+img {
+  display: inline-block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
