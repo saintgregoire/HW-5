@@ -72,7 +72,7 @@ background: rgb(35, 194, 52);
   font-size: 20px;
 }
 
-body {
+.index {
   background-image: url(../img/fon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,3 +138,77 @@ img {
   width: 1200px;
   margin: 0 auto;
 }
+
+/* Cards */
+
+main {
+  margin-top: 50px;
+}
+
+.block {
+  font-size: 0;
+}
+
+.first > div {
+  font-size: 20px;
+  width: 400px;
+  display: inline-block;
+  border: solid red 1px;
+  height: 400px;
+  background: mediumaquamarine;
+}
+
+.second-left > div {
+  font-size: 20px;
+  height: 200px;
+  border: solid red 1px;
+  width: 800px;
+  background: greenyellow;
+}
+
+.second-right > div {
+  font-size: 20px;
+  height: 133.33px;
+  border: solid red 1px;
+  width: 400px;
+  background: greenyellow;
+}
+
+.second-left, .second-right, .third-left, .third-right, .right-inside {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.third-left {
+  font-size: 20px;
+  width: 400px;
+  border: solid red 1px;
+  height: 400px;
+  background: orange;
+}
+
+.alone {
+  font-size: 20px;
+  width: 800px;
+  border: solid red 1px;
+  height: 200px;
+  background: orange;
+}
+
+.alone + div {
+  font-size: 20px;
+  width: 400px;
+  border: solid red 1px;
+  height: 200px;
+  background: orange;
+  display: inline-block;
+}
+
+.right-inside > div {
+  font-size: 20px;
+  width: 400px;
+  border: solid red 1px;
+  height: 100px;
+  background: orange;
+}
+
