@@ -80,7 +80,7 @@ background: rgb(35, 194, 52);
 
 .container.main {
   width: 1200px;
-  margin: 50px auto;
+  margin: 0px auto;
   padding-bottom: 20px;
   text-align: center;
   font-size: 20px;
@@ -111,9 +111,14 @@ p.down {
   color: red;
 }
 
-p.down + .link.down {
+p.down ~ .link.down {
   color:brown;
   text-transform: uppercase;
+  margin-left: 10px;
+}
+
+p.down + .link.down {
+  margin-left: 0;
 }
 
 p {
@@ -121,7 +126,6 @@ p {
 }
 
 h1 {
-  margin: 20px auto;
   font-size: 40px;
   font-weight: 900;
 }
@@ -139,11 +143,7 @@ img {
   margin: 0 auto;
 }
 
-/* Cards */
-
-main {
-  margin-top: 50px;
-}
+/*! Cards */
 
 .block {
   font-size: 0;
@@ -212,3 +212,86 @@ main {
   background: orange;
 }
 
+.link.home {
+  color:brown;
+  text-transform: uppercase;
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer a::before {
+content: '👆';
+}
+
+/*! Float */
+
+.container  div {
+  outline: 1px solid red;
+}
+
+.float > div {
+  float: left;
+}
+
+.clearfix::after {
+  content:'';
+  clear: both;
+  display: block;
+}
+
+.one div {
+  width: 400px;
+  height: 400px;
+}
+
+.two > div:first-child {
+  width: 800px;
+}
+
+.two > div:last-child {
+  width: 400px;
+}
+
+.two > div > div {
+  height: 200px;
+}
+
+div.small-blocks > div {
+  height: 133.333px;
+}
+
+.three > div:first-child {
+  height: 400px;
+}
+
+.three > div:first-child {
+  width: 400px;
+}
+
+.bottom-right {
+  width: 800px;
+}
+
+.bottom-right > div {
+  height: 200px;
+}
+
+.insider div:first-child {
+  width: 400px;
+  height: 200px;
+}
+
+.insider .down-right {
+  width: 400px;
+  height: 200px;
+}
+
+.insider .down-right div {
+  height: 100px;
+}
+
+.float-box {
+  margin: 50px auto;
+}
