@@ -227,7 +227,7 @@ content: '👆';
 
 /*! Float */
 
-.container  div {
+.float-box  div {
   outline: 1px solid red;
 }
 
