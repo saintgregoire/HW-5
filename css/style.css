@@ -143,6 +143,7 @@ img {
   margin: 0 auto;
 }
 
+
 /*! Cards */
 
 .block {
@@ -213,12 +214,16 @@ img {
 }
 
 .link.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.link.home > a {
   color:brown;
   text-transform: uppercase;
   font-size: 50px;
-  display: block;
-  text-align: center;
-  margin-top: 20px;
 }
 
 .footer a::before {
@@ -294,4 +299,64 @@ div.small-blocks > div {
 
 .float-box {
   margin: 50px auto;
+}
+
+/* ?FLEX */
+
+.flex-container {
+  padding-top: 50px;
+}
+
+.flex-container  div {
+  outline: 1px solid red;
+}
+
+.flex-first, .flex-second, .flex-third {
+  display: flex;
+  height: 400px;
+}
+
+.flex-first > div {
+  flex-basis: 400px;
+}
+
+.flex-second > div:first-child {
+  flex-basis: 800px;
+}
+
+.flex-second > div:last-child {
+  flex-basis: 400px;
+}
+
+.flex-third > div:first-child {
+  flex-basis: 400px;
+}
+
+.flex-third > div:last-child {
+  flex-basis: 800px;
+}
+
+.second-large > div {
+  height: 50%;
+}
+
+.second-small > div {
+  height: 33.333%;
+}
+
+.flex-bottom-right > div {
+  height: 200px;
+}
+
+.flex-insider {
+  display: flex;
+}
+
+
+.flex-insider > div {
+  flex-basis: 50%;
+}
+
+.flex-down-right > div {
+  height: 50%;
 }
